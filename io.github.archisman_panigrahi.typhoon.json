@@ -12,6 +12,16 @@
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/doc",
+        "/share/gir-1.0",
+        "/share/vala"
+    ],
+    "cleanup-commands": [
+        "python3 -m compileall --invalidation-mode=unchecked-hash /app"
+    ],
     "modules" : [
         {
             "name": "libportal",
