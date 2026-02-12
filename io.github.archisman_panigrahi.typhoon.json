@@ -19,6 +19,9 @@
         "/share/gir-1.0",
         "/share/vala"
     ],
+    "cleanup-commands": [
+        "python3 -m compileall --invalidation-mode=unchecked-hash /app"
+    ],
     "modules" : [
         {
             "name": "libportal",
