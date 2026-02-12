@@ -12,6 +12,13 @@
         "--device=dri",
         "--talk-name=org.freedesktop.Notifications"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/doc",
+        "/share/gir-1.0",
+        "/share/vala"
+    ],
     "modules" : [
         {
             "name": "libportal",
