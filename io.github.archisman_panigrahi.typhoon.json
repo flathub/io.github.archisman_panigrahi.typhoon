@@ -1,8 +1,8 @@
 {
     "app-id" : "io.github.archisman_panigrahi.typhoon",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
+    "runtime" : "org.kde.Platform",
+    "runtime-version" : "6.10",
+    "sdk" : "org.kde.Sdk",
     "command" : "typhoon",
     "finish-args" : [
         "--share=network",
@@ -46,13 +46,20 @@
             ]
         },
         {
+            "name": "python3-pyqt6",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app --no-build-isolation PyQt6==6.9.1 PyQt6-WebEngine==6.9.0"
+            ]
+        },
+        {
             "name": "typhoon",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/archisman-panigrahi/typhoon.git",
-                    "commit": "77bc45f60dc6cc39db3927b37c02a636fea4c532"
+                    "commit": "d7fbb316c8c261442472ad7c79ba0613ad4217e0"
                 }
             ]
         }
