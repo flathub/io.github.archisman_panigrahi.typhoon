@@ -47,6 +47,9 @@
         {
             "name": "dbus-python",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dtests=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
