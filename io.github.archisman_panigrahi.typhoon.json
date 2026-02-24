@@ -26,6 +26,16 @@
         {
             "name": "libportal",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Ddocs=false",
+                "-Dtests=false",
+                "-Dvapi=false",
+                "-Dintrospection=false",
+                "-Dbackend-qt6=enabled",
+                "-Dbackend-qt5=disabled",
+                "-Dbackend-gtk3=disabled",
+                "-Dbackend-gtk4=disabled"
+            ],
             "sources": [
                 {
                     "type": "archive",
